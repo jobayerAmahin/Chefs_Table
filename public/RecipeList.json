@@ -1,0 +1,103 @@
+[
+    {
+        "img": "https://i.ibb.co/FmGsKZX/ruoka1.jpg",
+        "recipe_id": "001",
+        "recipe_name": "Spaghetti Aglio e Olio",
+        "ingredients_array": [
+            "spaghetti",
+            "garlic",
+            "olive oil",
+            "red pepper flakes",
+            "parsley",
+            "salt"
+        ],
+        "preparing_time": "20 minutes",
+        "calories": 400,
+        "short_description": "A simple Italian pasta dish made with garlic, olive oil, and chili flakes."
+    },
+    {
+        "img": "https://i.ibb.co/7twFrrY/ruoka2.jpg",
+        "recipe_id": "002",
+        "recipe_name": "Chicken Curry",
+        "ingredients_array": [
+            "chicken",
+            "curry powder",
+            "coconut milk",
+            "onions",
+            "garlic",
+            "ginger",
+            "salt"
+        ],
+        "preparing_time": "45 minutes",
+        "calories": 600,
+        "short_description": "A flavorful curry made with tender chicken and aromatic spices."
+    },
+    {
+        "img": "https://i.ibb.co/C00Wxd4/ruoka3.jpg",
+        "recipe_id": "003",
+        "recipe_name": "Greek Salad",
+        "ingredients_array": [
+            "cucumbers",
+            "tomatoes",
+            "red onion",
+            "feta cheese",
+            "olive oil",
+            "oregano",
+            "salt"
+        ],
+        "preparing_time": "15 minutes",
+        "calories": 200,
+        "short_description": "A refreshing salad with crisp vegetables and tangy feta."
+    },
+    {
+        "img": "https://i.ibb.co/ySQtQrh/ruoka4.jpg",
+        "recipe_id": "004",
+        "recipe_name": "Fluffy Pancakes",
+        "ingredients_array": [
+            "flour",
+            "milk",
+            "eggs",
+            "baking powder",
+            "sugar",
+            "butter",
+            "salt"
+        ],
+        "preparing_time": "30 minutes",
+        "calories": 350,
+        "short_description": "Light and fluffy pancakes perfect for breakfast."
+    },
+    {
+        "img": "https://i.ibb.co/djvybpj/ruoka5.jpg",
+        "recipe_id": "005",
+        "recipe_name": "Vegetable Stir Fry",
+        "ingredients_array": [
+            "broccoli",
+            "bell peppers",
+            "carrots",
+            "soy sauce",
+            "ginger",
+            "garlic",
+            "sesame oil"
+        ],
+        "preparing_time": "25 minutes",
+        "calories": 250,
+        "short_description": "A quick and colorful stir fry packed with fresh vegetables."
+    },
+    {
+        "img": "https://i.ibb.co/PcDqnn8/ruoka6.jpg",
+        "recipe_id": "006",
+        "recipe_name": "Chocolate Cake",
+        "ingredients_array": [
+            "flour",
+            "cocoa powder",
+            "sugar",
+            "eggs",
+            "butter",
+            "baking soda",
+            "milk"
+        ],
+        "preparing_time": "1 hour",
+        "calories": 450,
+        "short_description": "A rich and decadent chocolate cake that satisfies every sweet tooth."
+    }
+]
