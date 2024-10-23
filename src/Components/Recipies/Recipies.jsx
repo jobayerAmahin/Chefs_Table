@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
+import PropTypes from "prop-types";
 import Recipe from "../Recipie/Recipe";
 
-const Recipies = () => {
+const Recipies = ({handleCookBtn}) => {
     const [RecipieArray,setRecipieArray]=useState([])
     useEffect(()=>{
         fetch('../../../public/RecipeList.json')
@@ -11,10 +12,13 @@ const Recipies = () => {
     return (
         <div>
             {
-                RecipieArray.map((recipie,idx)=><Recipe key={idx} recipie={recipie}></Recipe>)
+                RecipieArray.map((recipie,idx)=><Recipe handleCookBtn={handleCookBtn} key={idx} recipie={recipie}></Recipe>)
             }
         </div>
     );
 };
 
+Recipies.propTypes={
+    handleCookBtn:PropTypes.func
+}
 export default Recipies;

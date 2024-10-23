@@ -1,7 +1,8 @@
 
 import './App.css'
+import Main from './Components/Main/Main'
 import NavBar from './Components/Navbar/NavBar'
-import Recipies from './Components/Recipies/Recipies'
+
 
 function App() {
 
@@ -11,7 +12,7 @@ function App() {
         <NavBar></NavBar>
       </div>
       <div>
-        <Recipies></Recipies>
+        <Main></Main>
       </div>
     </>
   )
