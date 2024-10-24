@@ -1,7 +1,7 @@
 
 import PropTypes from 'prop-types';
-const Recipe = ({recipie,handleCookBtn}) => {
-    const {short_description,calories,preparing_time,ingredients_array,recipe_name,img}=recipie
+const Recipe = ({recipie,handleCookBtn,recipeId}) => {
+    const {short_description,calories,preparing_time,ingredients_array,recipe_name,img,recipe_id}=recipie
     return (
         <div>
             <div>
@@ -20,13 +20,14 @@ const Recipe = ({recipie,handleCookBtn}) => {
                     <h2>{preparing_time}</h2>
                     <h2>{calories}</h2>
                 </div>
-                <button onClick={()=>handleCookBtn(recipie)} className='btn bg-green-500 btn-md text-white text-lg font-bold'>Want to Cook</button>
+                <button onClick={()=>recipeId.includes(recipe_id)?alert('Already in the queue'):handleCookBtn(recipie,recipe_id)} className='btn bg-green-500 btn-md text-white text-lg font-bold'>Want to Cook</button>
             </div>
         </div>
     );
 };
 Recipe.propTypes={
     recipie:PropTypes.object,
-    handleCookBtn:PropTypes.func
+    handleCookBtn:PropTypes.func,
+    recipeId:PropTypes.array
 }
 export default Recipe;
