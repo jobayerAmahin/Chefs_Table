@@ -11,7 +11,7 @@
             "parsley",
             "salt"
         ],
-        "preparing_time": "20 minutes",
+        "preparing_time": 20,
         "calories": 400,
         "short_description": "A simple Italian pasta dish made with garlic, olive oil, and chili flakes."
     },
@@ -28,7 +28,7 @@
             "ginger",
             "salt"
         ],
-        "preparing_time": "45 minutes",
+        "preparing_time": 45,
         "calories": 600,
         "short_description": "A flavorful curry made with tender chicken and aromatic spices."
     },
@@ -45,7 +45,7 @@
             "oregano",
             "salt"
         ],
-        "preparing_time": "15 minutes",
+        "preparing_time": 15,
         "calories": 200,
         "short_description": "A refreshing salad with crisp vegetables and tangy feta."
     },
@@ -62,7 +62,7 @@
             "butter",
             "salt"
         ],
-        "preparing_time": "30 minutes",
+        "preparing_time": 30,
         "calories": 350,
         "short_description": "Light and fluffy pancakes perfect for breakfast."
     },
@@ -79,7 +79,7 @@
             "garlic",
             "sesame oil"
         ],
-        "preparing_time": "25 minutes",
+        "preparing_time": 25,
         "calories": 250,
         "short_description": "A quick and colorful stir fry packed with fresh vegetables."
     },
@@ -96,7 +96,7 @@
             "baking soda",
             "milk"
         ],
-        "preparing_time": "1 hour",
+        "preparing_time": 60,
         "calories": 450,
         "short_description": "A rich and decadent chocolate cake that satisfies every sweet tooth."
     }

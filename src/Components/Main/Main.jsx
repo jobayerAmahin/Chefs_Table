@@ -20,13 +20,15 @@ const Main = () => {
         setWantToCookArray(updatedArray)
     }
 
+    const [TotalCalories,setTotalCalories]=useState(0)
     const [PreparingArray,setPreparingArray]=useState([])
-    const handlePrepareBtn=(prepareItem,id)=>{
+    const handlePrepareBtn=(prepareItem,id,calorie)=>{
         const newPrepare=[...PreparingArray,prepareItem]
         setPreparingArray(newPrepare)
         const remainingArray=WantToCookArray.filter(remain=>remain.recipe_id!==id)
         setWantToCookArray(remainingArray)
         setWantToCook(WantToCook-1)
+        setTotalCalories(TotalCalories+calorie)
     }
 
     console.log()
@@ -40,7 +42,7 @@ const Main = () => {
                     <Calories handlePrepareBtn={handlePrepareBtn} WantToCook={WantToCook} WantToCookArray={WantToCookArray}></Calories>
                 </div>
                 <div>
-                    <Preparing PreparingArray={PreparingArray}></Preparing>
+                    <Preparing TotalCalories={TotalCalories} PreparingArray={PreparingArray}></Preparing>
                 </div>
             </div>
 
