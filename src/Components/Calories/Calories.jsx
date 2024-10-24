@@ -1,12 +1,12 @@
 import PropTypes from "prop-types";
 import Calorie from "../Calorie/Calorie";
-const Calories = ({WantToCook,WantToCookArray}) => {
+const Calories = ({WantToCook,WantToCookArray,handlePrepareBtn}) => {
     return (
         <div>
             <h1>Calories:{WantToCook}</h1>
             <div>
                 {
-                    WantToCookArray.map((calorie,idx)=><Calorie key={idx} calorie={calorie}></Calorie>)
+                    WantToCookArray.map((calorie,idx)=><Calorie handlePrepareBtn={handlePrepareBtn} key={idx} calorie={calorie}></Calorie>)
                 }
             </div>
         </div>
@@ -14,6 +14,7 @@ const Calories = ({WantToCook,WantToCookArray}) => {
 };
 Calories.propTypes={
     WantToCook:PropTypes.number,
-    WantToCookArray:PropTypes.array
+    WantToCookArray:PropTypes.array,
+    handlePrepareBtn:PropTypes.func
 }
 export default Calories;
