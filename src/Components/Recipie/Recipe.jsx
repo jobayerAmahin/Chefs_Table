@@ -1,7 +1,9 @@
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import PropTypes from 'prop-types';
 const Recipe = ({recipie,handleCookBtn,recipeId}) => {
     const {short_description,calories,preparing_time,ingredients_array,recipe_name,img,recipe_id}=recipie
+    const notify = () => toast('Already Booked! Please wait for preparing', {position: "top-center"});;
     return (
         <div>
             <div>
@@ -20,7 +22,9 @@ const Recipe = ({recipie,handleCookBtn,recipeId}) => {
                     <h2>{preparing_time}</h2>
                     <h2>{calories}</h2>
                 </div>
-                <button onClick={()=>recipeId.includes(recipe_id)?alert('Already in the queue'):handleCookBtn(recipie,recipe_id)} className='btn bg-green-500 btn-md text-white text-lg font-bold'>Want to Cook</button>
+                <button onClick={()=>recipeId.includes(recipe_id)? notify():handleCookBtn(recipie,recipe_id)} 
+                className='btn bg-green-500 btn-md text-white text-lg font-bold'>Want to Cook</button>
+                <ToastContainer />
             </div>
         </div>
     );
